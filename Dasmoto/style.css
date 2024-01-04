@@ -1,0 +1,31 @@
+.titulo{
+    background-image: url(pattern.jpeg);
+    font-family:helvetica;
+    font-size:100px;
+    font-weight:bold;
+    color:khaki;
+    text-align: center;
+}
+h2.titulo1{
+    font-family:helvetica;
+    font-size:32px;
+    font-weight:bold;
+    color:white;
+}
+#brushes{
+    background-color: mediumspringgreen;
+}
+
+#Frames{
+    background-color: lightcoral;
+}
+
+#Paint{
+    background-color: skyblue;
+}
+
+span.price{
+    font-family: helvetica;
+    font-weight: bold;
+    color:blue;
+}
