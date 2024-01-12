@@ -25,6 +25,75 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 // Add your functions below:
 
-function validateCred(arr){
 
+//funcion para ver si una tarjeta es valida o invalida
+function validateCred(arr){
+    let resultado = []
+    for (i = arr.length-1;i>=0;i--){
+        resultado.push(arr[i])
+        i--
+        if(arr[i]*2 > 9){
+            resultado.push(arr[i]*2 - 9)
+        }else if(arr[i]*2 < 9 ){
+            resultado.push(arr[i]*2)
+        }
+    }
+    
+    suma = resultado.reduce((acc, current) => {return acc + current})
+    
+    if(suma % 10 === 0){
+        return true
+    }else{
+        return false
+    }
 }
+
+//funcion para revisar un batch de tarjetas y retorna las invalidas
+function findInvalidCards(arr){
+    let invalids=[];
+    for (let i=0;i<arr.length;i++){
+        //console.log(arr[i])
+        if(validateCred(arr[i]) === false)[
+            invalids.push(arr[i])
+        ]
+    }
+    return invalids
+}
+
+function idInvalidCardCompanies(arr){
+    let companies =[]
+    for (let i=0;i < arr.length;i++){
+        if (arr[i][0] ===3){
+            if(companies.includes('Amex (American Express)')){
+                continue;
+            }else{
+                companies.push('Amex (American Express)')
+            }
+        }else if (arr[i][0] ===4){
+            if(companies.includes('Visa')){
+                continue;
+            }else{
+                companies.push('Visa')
+            }
+        }else if (arr[i][0] ===5){
+            if(companies.includes('Mastercard')){
+                continue;
+            }else{
+                companies.push('Mastercard')
+            }
+        }else if (arr[i][0] ===6){
+            if(companies.includes('Discover')){
+                continue;
+            }else{
+                companies.push('Discover')
+            }
+        }else{
+            return console.log('Company not found')
+        }
+    }
+    return companies
+}
+
+test=findInvalidCards(batch);
+test2=idInvalidCardCompanies(test)
+console.log(test2);
