@@ -37,7 +37,7 @@ function random_background(){
   const profession = random_profession()
   const place=random_place()
   const texto_desc=document.getElementById("gen_descrp")
-  texto_desc.textContent = `let\'s meet ${name1}, a ${profession} by profession. Born and rise in ${place}.`
+  texto_desc.textContent = `Let\'s meet ${name1}, a ${profession} by profession. Born and rise in ${place}.`
   
   //obtener el estado actual de la propiedad hidden
   const hiddenState = texto_desc.getAttribute('hidden');
