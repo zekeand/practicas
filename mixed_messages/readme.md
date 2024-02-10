@@ -9,10 +9,10 @@
 
 ### Partes del programa ###
 + Una pagina web simple con un boton y una zona donde aparece el resultado (hecho)
-+ el programa en JS que se ejecuta cada vez que se presiona el boton (hecho)
-+ una libreria o una lista de palabras predeterminadas (hecho)
-+ buscar una imagen de arme su historia de personaje (pendiente)
-+ podria hacer un generador automatico de nombres (hecho)
-+ un randomizador de lugares fanasticos donde nacio (hecho)
-+ un randomizador de profesiones (hecho)
-+ una historia tipo RPG sencilla (pendiente)
++ El programa en JS que se ejecuta cada vez que se presiona el boton (hecho)
++ Una libreria o una lista de palabras predeterminadas (hecho)
++ Buscar una imagen de arme su historia de personaje (pendiente)
++ Podria hacer un generador automatico de nombres (hecho)
++ Un randomizador de lugares fanasticos donde nacio (hecho)
++ Un randomizador de profesiones (hecho)
++ Una historia tipo RPG sencilla (pendiente)
