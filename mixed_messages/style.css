@@ -1,0 +1,19 @@
+#titulo {
+    color:blue;
+    text-align:center
+}
+
+#boton{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bn_gen{
+    color:rgb(7, 49, 141);
+}
+
+#gen_descrp{
+    color: black;
+    text-align: center;
+}
